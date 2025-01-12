@@ -1,0 +1,131 @@
+#main_nav_text{
+    color:rgb(231, 255, 193);
+
+}
+#main_nav_text:hover{
+    color: rgb(231, 255, 193);
+}
+.menu_toggler {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 120px;
+    height: 50px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu_toggler:checked~ul .menu_item {
+    opacity: 1;
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(1) {
+    transform: rotate(0deg) translate(-160px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(2) {
+    transform: rotate(72deg) translateX(-160px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(3) {
+    transform: rotate(144deg) translateX(-160px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(4) {
+    transform: rotate(216deg) translateX(-160px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(5) {
+    transform: rotate(288deg) translateX(-160px);
+}
+
+
+.menu_toggler:checked~ul .menu_item a {
+    pointer-events: auto;
+    font-size: 25px;
+}
+
+.menu_toggler+label {
+    width: 220px;
+    height: 60px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.5px;
+    font-size: 35px;
+    text-align: center;
+    transition: transform 0.5s top 0.5s;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.menu_item:nth-child(1) a {
+    transform: rotate(0deg);
+}
+
+.menu_item:nth-child(2) a {
+    transform: rotate(-72deg);
+}
+
+.menu_item:nth-child(3) a {
+    transform: rotate(-144deg);
+}
+
+.menu_item:nth-child(4) a {
+    transform: rotate(-216deg);
+}
+
+.menu_item:nth-child(5) a {
+    transform: rotate(-288deg);
+}
+
+.menu_item:nth-child(6) a {
+    transform: rotate(-300deg);
+}
+
+.menu_item {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu_item a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    color: rgba(255, 255, 255, 0.9);
+    background: #c8dfac;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.menu_item a:hover {
+    box-shadow: 0 0 4px 10px rgba(221, 255, 194, 0.6);
+    color: white;
+    background: #c1de9c;
+    font-size: 27px !important;
+    width:110px;
+    height: 110px;
+    
+}
+

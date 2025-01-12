@@ -8,11 +8,11 @@ import SpecialNav from "../componets/specialNav/index";
 export default function Home() {
 
   return (
-    <>
-      <div style={{display:"flex",flexDirection:"column", justifyContent: "center", alignItems:"center"}}>
-        <svg id="home-text" width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <div id={styles.body}>
+      <nav id={styles.menu}>
+        <svg id={ styles.home_text} xmlns="http://www.w3.org/2000/svg">
           <g>
-            <rect style={{ fill: "none" }} id="canvas_background" height="402" width="400" y="-1" x="-1" />
+            <rect style={{ fill: "none" }} height="402" width="400" y="-1" x="-1" />
             <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
               <rect fill="url(#gridpattern)" strokeWidth="0" y="0" x="0" height="100%" width="100%" />
             </g>
@@ -22,7 +22,7 @@ export default function Home() {
           </g>
           <text width="400">
             <textPath
-              id="home-header"
+              id={styles.home_header}
               href="#cool"
               style={{
                 fontSize: "30px",
@@ -37,7 +37,7 @@ export default function Home() {
         <UsersProvider>
           <SpecialNav/>
         </UsersProvider>
-      </div>
-    </>  
+      </nav>
+    </div>  
   );
 }

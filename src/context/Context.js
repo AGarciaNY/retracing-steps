@@ -2,13 +2,22 @@
 import { Children, createContext, useContext } from "react"
 let isUserLogedIn = false
 let userOptions = ( ) => {
-    return isUserLogedIn? [{
-        name:"Sign up",
-        href:"/signup"
-    }]:[{
-        name:"Sign Off",
-        href:"/home"
-    }]
+    return isUserLogedIn ? [
+        {
+            name:"Sign Off",
+            href:"/home"
+        }
+    ]:
+    [
+        {
+            name:"Sign up",
+            href:"/signup"
+        },
+        {
+            name:"Log In",
+            href:"/login"
+        }
+    ]
 
 }
 

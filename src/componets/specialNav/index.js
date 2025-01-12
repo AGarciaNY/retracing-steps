@@ -1,24 +1,21 @@
 'use client'
 import {mainData} from "../../context/Context" 
+import styles from "./index.module.css"
+
+
 export default function SpecialNav (){
-  // let navLinkist = links.map((val, i) => {
-  //   return <li className="menu-item" key={`nave${i}`}><a onClick={() => { goToHomePage(val.link) }}>{val.name}</a></li >
-  // })
-  console.log(mainData(),"here")
+  let navLinkist = mainData().lin.map((val, i) => {
+    return <li className={styles.menu_item} key={`nave${i}`}><a >{val.name}</a></li >
+  })
   return (
     <div>
-      i am here
+      <div style={{padding:"00px"}}>
+        <input className={styles.menu_toggler} type="checkbox" />
+          <label id={styles.main_nav_text}>Start Here</label>
+          <ul>
+            {navLinkist}
+          </ul>
+      </div>
     </div>
-    // <div style={{padding:"0px"}}>
-    //   <input className="menu-toggler" type="checkbox" />
-    //     <label id="main-nav-text">Start Here</label>
-    //     <ul>
-    //       {/* {navLinkist} */}
-    //       {isUserLogedIn ? <li className="menu-item" key={`signOuthere`}><a onClick={() => {
-    //         userSignOut()
-    //         goToHomePage("./")
-    //       }}>Sign Out</a></li > : ""}
-    //     </ul>
-    // </div>
   )
 }
