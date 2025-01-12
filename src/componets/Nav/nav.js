@@ -1,21 +1,11 @@
 import Link from 'next/link';
+// import {links} from "../../data/index";
+
 export default function Nav() {
-    const links = [
-      {
-        name:"about",
-        href:"/about"
-      },
-      {
-        name:"blog",
-        href:"/blog"
-      },{
-        name:"home",
-        href:"/"
-      }
-    ]
+    // console.log(links)
     return (
       <>
-        {links.map((link) => {
+        {/* {links.map((link) => {
           const LinkIcon = link.icon;
           return (
             <Link
@@ -26,7 +16,7 @@ export default function Nav() {
               <p className="hidden md:block">{link.name}</p>
             </Link>
           );
-        })}
+        })} */} 
       </>  
     );
   }
