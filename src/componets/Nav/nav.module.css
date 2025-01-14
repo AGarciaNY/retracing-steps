@@ -1,0 +1,132 @@
+/* Layout */
+.center_menu_page {
+    height: 50px;
+    display: block;
+    position: sticky;
+    width: 50px;
+    top: 10px;
+    left: 30px;
+    z-index: 5;
+}
+
+.menu_page {
+    position: absolute;
+    top: 75%;
+    left: 75%;
+}
+
+.menu_page a {
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 25px;
+    opacity: 0;
+    background-color: #b1e688;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 4.25px 0 0 0;
+    text-align: center;
+    visibility: hidden;
+    color: #4ac21e;
+    transition: opacity 0.2s linear,
+        top 0.2s linear,
+        left 0.2s linear,
+        visibility 0.2s linear;
+}
+
+.nav_background {
+    background-color: #FF8787;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 40px;
+    top: 45px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 0;
+}
+
+.menu_open_page:checked~.menu_page a {
+    visibility: visible;
+    opacity: 1;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu_open_page:checked~.menu_page a:nth-child(1) {
+    left: calc(50% + 25px);
+    top: -35px;
+    transform: scale(1.5);
+}
+
+.menu_open_page:checked~.menu_page a:nth-child(2) {
+    left: calc(50% - 20px);
+    top: -10px;
+    transform: scale(1.5);
+}
+
+.menu_open_page:checked~.menu_page a:nth-child(3) {
+    left: calc(50% - 35px);
+    top: 35px;
+    transform: scale(1.5);
+}
+
+.menu_open_page:checked~.menu_page a:nth-child(4) {
+    left: calc(50% - 20px);
+    top: 80px;
+    transform: scale(1.5);
+}
+
+.menu_open_page:checked~.menu_page a:nth-child(5) {
+    left: calc(50% + 22.5px);
+    top: 105px;
+    transform: scale(1.5);
+}
+
+/* Checkbox */
+.menu_open_page {
+    display: none;
+}
+
+.menu_button_page {
+    transition: 0.5s;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 14px 0 0 0;
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(20% + 8px);
+    z-index: 2;
+    cursor: pointer;
+    background: #E5EBB2;
+    border: 1px solid #E5EBB2;
+    box-shadow: 0px 3px 0px 1px #E5EBB2,
+        inset 0px 2px 8px 5px #E5EBB2;
+    border-radius: 50px;
+}
+
+.menu_button_page:hover {
+    background: #9bdb6b;
+    transform:scale(1.3)
+}
+.menu_open_page:checked ~ .menu_button_page {
+    transform: scale(1.5) translateX(40px) translateY(25px);
+}
+.menu_open_page:checked~ .menu_button_page:hover{
+    background: #FF8787;
+}
+
+.menu_open_page:checked~.nav_background {
+    transform: scale(16) translateX(.8px) translateY(2.25px);
+}
+
+.menu_open_page:checked~.menu_page a:hover {
+    color: #2f910b;
+    transform: scale(2);
+}
+
+

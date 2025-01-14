@@ -1,9 +1,9 @@
 import Nav from "@/componets/Nav/nav";
-export default function blog() {
+export default function About() {
     return (
       <>
-        <Nav/>
-        <h1>blog here</h1>
+      <Nav/>
+        <h1>long in</h1>
       </>
     );
   }

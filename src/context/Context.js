@@ -5,17 +5,17 @@ let userOptions = ( ) => {
     return isUserLogedIn ? [
         {
             name:"Sign Off",
-            href:"/home"
+            link:"/home"
         }
     ]:
     [
         {
             name:"Sign up",
-            href:"/signup"
+            link:"/signup"
         },
         {
             name:"Log In",
-            href:"/login"
+            link:"/login"
         }
     ]
 
@@ -24,15 +24,18 @@ let userOptions = ( ) => {
 const links = {
     lin:[{
         name:"Home",
-        href:"/home"
+        link:"/home",
+        logo: "icon fa fa-home"
     },
     {
         name:"Donate",
-        href:"/Donate"
+        link:"/donate",
+        logo: "fa fa-university"
     },
     {
         name:"About",
-        href:"/about"
+        link:"/about",
+        logo: "fa fa-info-circle"
     },
     ...userOptions()
     ]
