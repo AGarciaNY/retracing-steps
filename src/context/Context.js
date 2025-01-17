@@ -1,11 +1,11 @@
 "use client"
-import { Children, createContext, useContext } from "react"
+import {createContext, useContext } from "react"
 let isUserLogedIn = false
 let userOptions = ( ) => {
     return isUserLogedIn ? [
         {
             name:"Sign Off",
-            link:"/home"
+            link:"/"
         }
     ]:
     [
@@ -24,7 +24,7 @@ let userOptions = ( ) => {
 const links = {
     lin:[{
         name:"Home",
-        link:"/home",
+        link:"/",
         logo: "icon fa fa-home"
     },
     {

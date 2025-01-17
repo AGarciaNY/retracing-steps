@@ -1,0 +1,32 @@
+.detail_containter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail_containter div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.detail_containter div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.detail_containter div h1{
+    margin: 20px 0 20px 60px;
+}
+.detail_containter div div p{
+    width: 350px;
+    margin: 0 20px;
+}
+
+.detail_containter div div img{
+    width: 320px;
+    border-radius: 100%;
+    margin: 0 20px;
+}

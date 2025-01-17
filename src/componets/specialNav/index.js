@@ -1,8 +1,9 @@
 'use client'
-import {mainData} from "../../context/Context" 
+import {mainData} from "../../context/Context"
 import styles from "./index.module.css"
 import {redirect} from 'next/navigation'
 export default function SpecialNav (){
+
   const goToHomePage = (link) => {
     redirect(link)
   }
@@ -11,7 +12,7 @@ export default function SpecialNav (){
   })
   return (
     <div>
-      <div style={{padding:"00px"}}>
+      <div style={{padding:"0px"}}>
         <input className={styles.menu_toggler} type="checkbox" />
           <label id={styles.main_nav_text}>Start Here</label>
           <ul>

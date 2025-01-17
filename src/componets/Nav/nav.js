@@ -1,6 +1,5 @@
 'use client'
 import {mainData} from "../../context/Context" 
-import Link from 'next/link';
 import styles from './nav.module.css'
 import {useState} from 'react'
 import { redirect } from 'next/navigation'
@@ -17,7 +16,8 @@ export default function Nav() {
       return <a 
         key={`navlink${i}`} 
         className={val.logo} 
-        onClick={()=>{navigateTo(val.link) }}>
+        onClick={()=>{navigateTo(val.link) }}
+        >
           {val.name[0]}
         </a>
     })

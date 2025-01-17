@@ -1,0 +1,19 @@
+.center{
+    position: absolute;
+    left: calc(50% - 70px);
+}
+
+.main_content{
+    margin-top: 200px;
+}
+.places_to_donate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.church_to_donate{
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    background-color: rgb(155, 244, 125);
+}

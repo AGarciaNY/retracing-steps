@@ -1,8 +1,6 @@
-import Image from "next/image";
+
 import styles from "./page.module.css";
-import Nav from "@/componets/Nav/nav";
-import {links} from "../data/index"
-import {UsersProvider, mainData} from "../context/Context" 
+import { UsersProvider } from "../context/Context"
 import SpecialNav from "../componets/specialNav/index";
 
 export default function Home() {
@@ -10,7 +8,7 @@ export default function Home() {
   return (
     <div id={styles.body}>
       <nav id={styles.menu}>
-        <svg id={ styles.home_text} xmlns="http://www.w3.org/2000/svg">
+        <svg id={styles.home_text} xmlns="http://www.w3.org/2000/svg">
           <g>
             <rect style={{ fill: "none" }} height="402" width="400" y="-1" x="-1" />
             <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
@@ -35,9 +33,9 @@ export default function Home() {
           </text>
         </svg>
         <UsersProvider>
-          <SpecialNav/>
+          <SpecialNav />
         </UsersProvider>
       </nav>
-    </div>  
+    </div>
   );
 }

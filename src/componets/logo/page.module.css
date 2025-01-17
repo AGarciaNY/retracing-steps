@@ -1,0 +1,40 @@
+.logo_holder {
+    margin: 10px;
+    width: 124px;
+    height: 124px;
+    /* position: absolute; */
+    /* left: calc(50% - 70px); */
+    transform: scale(1.2);
+}
+
+.c1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-left-color: #091801;
+    border-bottom-color: #091801;
+    transform: rotate(45deg);
+}
+
+.c2 {
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+    transform: scale(0.8);
+}
+
+.s1 {
+    width: 70px;
+    height: 70px;
+    background-color: #091801;
+    position: absolute;
+    top: 0px;
+}
+
+.LgH {
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-size: 18px;
+}
